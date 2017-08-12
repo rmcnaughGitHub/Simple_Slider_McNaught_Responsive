@@ -1,0 +1,102 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Zilla Slab Highlight', cursive;
+}
+
+h1 {
+  font-size: 1.5em;
+  line-height: 2.0em;
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  outline: 1px solid #f00;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0;
+  width: 90%;
+}
+
+.buttons {
+  font-size: 2.5em;
+  line-height: 2.0em;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  width: 720px;
+}
+
+.buttons .button_prev, .buttons .button_next {
+  cursor: pointer;
+  display: inline-block;
+  height: 50px;
+  outline: 1px dotted #fff;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  vertical-align: top;
+  width: 50px;
+  z-index: 5;
+}
+
+.buttons .button_prev {
+  left: 0;
+}
+
+.buttons .button_next {
+  right: 0;
+}
+
+.buttons .button_prev:hover, .buttons .button_next:hover {
+  color: #ccc;
+}
+
+
+.slider {
+    font-size: 2.0em;
+    font-weight: bold;
+    width: 100%;
+    min-height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+/*.slider ul selector the unordered list has 
+its position set to absolute, so the ul can 
+be absolutely positioned relative to in parent, .slider.*/
+.slider ul {
+    display: block;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /*important*/
+    position: absolute;
+    width: 300%;
+}
+
+.slider li {
+    height: 100%;
+    /*important*/
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    /**/
+    width: 100%;
+}
+
+.slider img {
+  min-height: 100%;
+    width: 100%;
+}
+
+/* helper css, since we don't have images */
+.slide1 {background: red;}
+.slide2 {background: blue;}
+.slide3 {background: green;}
+.slide4 {background: purple;}
+.slide5 {background: pink;}
+.slide6 {background: orange;}
+
